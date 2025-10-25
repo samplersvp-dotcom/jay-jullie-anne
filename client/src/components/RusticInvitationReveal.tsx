@@ -110,67 +110,43 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         className="relative z-10 max-w-2xl w-full"
         data-testid="invitation-paper"
       >
-        {/* Paper with rustic texture */}
+        {/* Paper with elegant design */}
         <div 
-          className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50 p-8 md:p-12 shadow-2xl"
-          style={{
-            backgroundImage: `
-              linear-gradient(90deg, rgba(139,115,85,0.03) 1px, transparent 1px),
-              linear-gradient(rgba(139,115,85,0.03) 1px, transparent 1px),
-              radial-gradient(circle at 20% 30%, rgba(160,82,45,0.05) 0%, transparent 50%),
-              radial-gradient(circle at 80% 70%, rgba(139,115,85,0.05) 0%, transparent 50%)
-            `,
-            backgroundSize: '30px 30px, 30px 30px, 200px 200px, 200px 200px',
-            border: '3px solid #333333',
-            boxShadow: `
-              0 20px 60px rgba(51,51,51,0.4),
-              inset 0 0 60px rgba(255,248,220,0.5),
-              0 0 0 1px rgba(51,51,51,0.2)
-            `
-          }}
+          className="relative bg-white/10 border border-gold/30 rounded-3xl p-8 md:p-12 shadow-lg"
         >
           {/* Decorative corner elements */}
-          <div className="absolute top-4 left-4 w-12 h-12 border-l-2 border-t-2 border-primary opacity-40"/>
-          <div className="absolute top-4 right-4 w-12 h-12 border-r-2 border-t-2 border-primary opacity-40"/>
-          <div className="absolute bottom-4 left-4 w-12 h-12 border-l-2 border-b-2 border-primary opacity-40"/>
-          <div className="absolute bottom-4 right-4 w-12 h-12 border-r-2 border-b-2 border-primary opacity-40"/>
-
-          {/* Rustic leaf decoration */}
-          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-            <svg width="60" height="40" viewBox="0 0 60 40">
-              <path d="M30,5 Q20,10 15,20 Q20,15 30,15 Q40,15 45,20 Q40,10 30,5 Z" 
-                    fill="#8B7355" opacity="0.6"/>
-              <path d="M30,15 L30,35" stroke="#5D4E37" strokeWidth="2" opacity="0.5"/>
-            </svg>
-          </div>
+          <div className="absolute top-4 left-4 w-12 h-12 border-l-2 border-t-2 border-gold opacity-40"/>
+          <div className="absolute top-4 right-4 w-12 h-12 border-r-2 border-t-2 border-gold opacity-40"/>
+          <div className="absolute bottom-4 left-4 w-12 h-12 border-l-2 border-b-2 border-gold opacity-40"/>
+          <div className="absolute bottom-4 right-4 w-12 h-12 border-r-2 border-b-2 border-gold opacity-40"/>
 
           {/* Content */}
           <div className="text-center relative z-10">
             {/* Ornamental divider top */}
             <div className="flex items-center justify-center mb-6">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"/>
-              <svg className="w-6 h-6 mx-3 text-primary" viewBox="0 0 24 24">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold"/>
+              <svg className="w-6 h-6 mx-3 text-gold" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
               </svg>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary"/>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold"/>
             </div>
 
             <h2 
-              className="text-4xl md:text-5xl font-script italic text-primary mb-6"
+              className="text-4xl md:text-5xl font-script italic text-gold mb-6"
               style={{ fontFamily: 'Boska, serif' }}
             >
               You're Invited
             </h2>
 
             <p 
-              className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6 italic"
+              className="text-lg md:text-xl text-gold-light leading-relaxed mb-6 italic"
               style={{ fontFamily: 'Georgia, serif' }}
             >
               Come witness the moment we tie the knot and start our greatest adventure together
             </p>
 
             <div
-              className="text-base md:text-lg text-foreground/80"
+              className="text-base md:text-lg text-gold-light"
             >
               <p className="mb-2">with love, laughter,</p>
               <p>and a lifetime of memories</p>
@@ -178,30 +154,17 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
             {/* Ornamental divider bottom */}
             <div className="flex items-center justify-center mt-6">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"/>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary"/>
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold"/>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold"/>
             </div>
           </div>
 
-          {/* Paper aging effect */}
-          <div className="absolute inset-0 pointer-events-none opacity-10">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-900 to-transparent"/>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-amber-900 to-transparent"/>
-          </div>
         </div>
 
-        {/* Wax seal effect */}
-        <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-          <div className="relative">
-            <svg width="60" height="60" viewBox="0 0 60 60">
-              <circle cx="30" cy="30" r="28" fill="white" opacity="0.9"/>
-              <circle cx="30" cy="30" r="24" fill="white"/>
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <img src={Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview} alt="I&R" className="h-16 w-16 object-contain" />
-            </div>
-            {/* Wax drips */}
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-4 h-3 bg-gradient-to-b from-white to-transparent rounded-b-full opacity-70"/>
+        {/* Elegant seal */}
+        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+          <div className="relative w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/40">
+            <img src={Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview} alt="I&R" className="h-12 w-12 object-contain" />
           </div>
         </div>
       </div>
