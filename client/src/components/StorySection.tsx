@@ -217,11 +217,11 @@ Because when love is real, distance is just a test — and ours passed with flyi
               style={{ width: '100vw', minWidth: '100vw' }}
             >
               <div 
-                className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full relative overflow-hidden rounded-3xl p-8 transition-all duration-300 bg-white/10 border border-gold/30 backdrop-blur-sm"
+                className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center relative overflow-hidden rounded-3xl p-8 md:p-12 transition-all duration-300 bg-white border border-gold/30 shadow-lg"
                 style={{
                   background: mousePosition[card.id] 
-                    ? `radial-gradient(600px circle at ${mousePosition[card.id].x}px ${mousePosition[card.id].y}px, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08) 40%), rgba(255, 255, 255, 0.1)`
-                    : 'rgba(255, 255, 255, 0.1)'
+                    ? `radial-gradient(600px circle at ${mousePosition[card.id].x}px ${mousePosition[card.id].y}px, rgba(212, 168, 83, 0.08), rgba(255, 255, 255, 1) 40%), white`
+                    : 'white'
                 }}
                 onMouseMove={(e) => handleMouseMove(e, card.id)}
                 onMouseLeave={() => handleMouseLeave(card.id)}
