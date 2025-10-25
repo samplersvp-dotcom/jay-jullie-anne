@@ -27,7 +27,7 @@ const HeroSection = () => {
             {animationsEnabled ? (
               <TypeAnimation
                 sequence={[
-                  'Jayrald\n&\nLianne',
+                  'Jay\n&\nLianne',
                   () => {
                     setShowElements(true);
                   }
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 }}
                 className="typewriter-text"
               >
-                Jayrald
+                Jay
                 <br />
                 &
                 <br />

@@ -29,7 +29,7 @@ No pressure, no monsarries and anniversaries, no love songs needed — just pure
 
 But plot twist! LDR pala 😅
 
-Jayrald from Camarines Norte and Lianne from Antipolo. Two different places, same heartbeat. 💖
+Jay from Camarines Norte and Lianne from Antipolo. Two different places, same heartbeat. 💖
 
 There were times na mahirap, may days na miss mo lang talaga 'yung isa't isa, pero laban lang! Kahit gaano kalayo, we always found ways to make each other feel close. From random calls, surprise visits, to those small "good morning" and "ingat ka" messages — every little thing became part of our big story.
 
@@ -48,7 +48,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
     {
       id: 2,
       title: "LDR Journey",
-      shortText: "Plot twist — LDR pala! 😅 Jayrald from Camarines Norte and Lianne from Antipolo. Two different places, same heartbeat. 💖",
+      shortText: "Plot twist — LDR pala! 😅 Jay from Camarines Norte and Lianne from Antipolo. Two different places, same heartbeat. 💖",
       image: lovestory2,
       icon: Compass
     },

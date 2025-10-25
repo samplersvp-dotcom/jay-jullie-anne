@@ -20,9 +20,12 @@ const DressCodeSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 7.8 }}
         >
-          <h2 className="font-display italic text-gold mb-8 text-[48px]" data-testid="text-dresscode-title">
-            Attire Guide
+          <h2 className="font-display italic text-gold mb-4 text-[48px]" data-testid="text-dresscode-title">
+            Attire
           </h2>
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+            Would be delighted if you could join us dressed in our wedding colors
+          </p>
         </motion.div>
 
         {/* Modern Dress Code Grid */}
@@ -45,9 +48,8 @@ const DressCodeSection = () => {
                   <div className="mb-6 relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent rounded-2xl"></div>
                     <h3 className="text-xl font-display font-medium text-foreground mb-4 relative z-10">
-                      NINANG & NINONG
+                      Principal Sponsors
                     </h3>
-                    <p className="text-sm text-foreground/80 mb-3">(Godparents)</p>
                     <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
                       <span className="text-sm font-normal text-foreground">FORMAL ATTIRE</span>
                     </div>
@@ -55,19 +57,19 @@ const DressCodeSection = () => {
                 </motion.div>
                 <motion.img 
                   src={principalSponsorsImage}
-                  alt="Ninang & Ninong attire guide"
+                  alt="Principal Sponsors attire guide"
                   className="w-full max-w-md mx-auto object-contain rounded-2xl shadow-md group-hover:shadow-lg transition-shadow duration-300"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 8.5 }}
                 />
-                <div className="mt-6">
-                  <p className="text-sm text-foreground/80 mb-3 text-center">Coat and Suit for Ninong</p>
-                  <p className="text-sm text-foreground/80 mb-3 text-center">Gold for Ninangs</p>
-                  <div className="flex justify-center gap-3">
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#FFD700' }}></div>
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#DAA520' }}></div>
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#B8860B' }}></div>
+                <div className="mt-6 space-y-3">
+                  <p className="text-sm text-foreground/80 font-semibold">Gentlemen: Black or suits with motif inspired accents</p>
+                  <p className="text-sm text-foreground/80 font-semibold">Ladies: Beige, Gold, or Champagne gowns</p>
+                  <div className="flex justify-center gap-3 mt-4">
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#F5F5DC' }} title="Beige"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#FFD700' }} title="Gold"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#F7E7CE' }} title="Champagne"></div>
                   </div>
                 </div>
               </div>
@@ -92,10 +94,10 @@ const DressCodeSection = () => {
                   <div className="mb-6 relative">
                     <div className="absolute inset-0 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl"></div>
                     <h3 className="text-xl font-display font-medium text-foreground mb-4 relative z-10">
-                      GUESTS
+                      Guest Semi-Formal
                     </h3>
                     <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
-                      <span className="text-sm font-normal text-foreground">SEMI FORMAL or FORMAL</span>
+                      <span className="text-sm font-normal text-foreground">SEMI FORMAL</span>
                     </div>
                   </div>
                 </motion.div>
@@ -107,12 +109,15 @@ const DressCodeSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 8.8 }}
                 />
-                <div className="mt-6">
-                  <p className="text-sm text-foreground/80 mb-3 text-center">With Touch of Green</p>
-                  <div className="flex justify-center gap-3">
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#90EE90' }}></div>
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#50C878' }}></div>
-                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#00A86B' }}></div>
+                <div className="mt-6 space-y-3">
+                  <p className="text-sm text-foreground/80">Suggested colors:</p>
+                  <p className="text-sm text-foreground/80 font-semibold">Emerald green, Sage, Olive green, Gold, or Light gray</p>
+                  <div className="flex justify-center gap-3 mt-4">
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#50C878' }} title="Emerald Green"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#8A9A5B' }} title="Sage"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#708238' }} title="Olive Green"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#FFD700' }} title="Gold"></div>
+                    <div className="w-12 h-12 rounded-full border-2 border-border shadow-md" style={{ backgroundColor: '#D3D3D3' }} title="Light Gray"></div>
                   </div>
                 </div>
               </div>
@@ -130,42 +135,16 @@ const DressCodeSection = () => {
           <h3 className="text-2xl font-display text-foreground text-center mb-8">Additional Guidelines</h3>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Ninong/Ninang */}
+            {/* White and Ivory */}
             <div className="bg-card/20 rounded-xl p-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
                 <div>
                   <h4 className="text-base font-display font-semibold text-foreground mb-2">
-                    Ninang & Ninong: Coat and Suit for Ninong, Gold for Ninangs
+                    White and Ivory are lovingly reserved for the couple
                   </h4>
                   <p className="text-sm text-foreground/70">
-                    Ninong: Please wear coat and suit. Ninangs: Please wear gold formal attire.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Guests */}
-            <div className="bg-card/20 rounded-xl p-6">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">Guests: Semi Formal or Formal with Touch of Green</h4>
-                  <p className="text-sm text-foreground/70">Incorporate green accents into your semi-formal or formal attire.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* No white colors */}
-            <div className="bg-card/20 rounded-xl p-6">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">
-                    No white colors
-                  </h4>
-                  <p className="text-sm text-foreground/70">
-                    Avoid wearing white, as this color is reserved for the bride.
+                    Please avoid wearing white or ivory, as these colors are reserved for the bride and groom.
                   </p>
                 </div>
               </div>

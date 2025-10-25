@@ -170,8 +170,8 @@ Successfully migrated from Lovable to Replit environment:
   - Shows "Perfect Score!" message only for 5/5, "Amazing Score!" with actual score for 4/5
   - Implemented functional state updates for reliable score tracking
   - Adjusted invitation paper dimensions: wider (max-w-5xl) and shorter (reduced padding and spacing)
-- **2025-10-25**: Complete wedding details update for Jayrald & Lianne:
-  - Updated couple names to Jayrald Lladones & Julie Anne Gacilo (Jayrald & Lianne)
+- **2025-10-25**: Complete wedding details update for Jay & Lianne:
+  - Updated couple names to Jay Lladones & Julie Anne Gacilo (Jay & Lianne)
   - Changed wedding date to December 2, 2025 at 2:00 PM
   - Updated ceremony venue to Parish of Immaculate Heart of Mary
   - Updated reception venue to Jamesville Hotel and Resort
@@ -199,3 +199,12 @@ Successfully migrated from Lovable to Replit environment:
     - Bible Bearer: Rouge Vermilion Felipe
   - Updated HTML title and meta descriptions with new couple names and date
   - Updated all footer and header references throughout the site
+  - Updated venue images with new ceremony (Parish of Immaculate Heart of Mary) and reception (Jamesville Hotel and Resort) photos
+  - Updated Google Maps links for both venues
+  - Changed RSVP deadline to November 15, 2025
+  - Updated gift message with new heartfelt wording
+  - Updated attire section:
+    - Principal Sponsors Gentlemen: Black or suits with motif inspired accents
+    - Principal Sponsors Ladies: Beige, Gold, or Champagne gowns
+    - Guest semi-formal: Emerald green, Sage, Olive green, Gold, or Light gray
+    - White and Ivory lovingly reserved for the couple
