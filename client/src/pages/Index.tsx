@@ -7,7 +7,6 @@ import MusicConsentPopup from '@/components/MusicConsentPopup';
 import cover1Image from '@assets/cover1_1761403348867.JPG';
 import cover2Image from '@assets/cover2_1761403348868.JPG';
 import cover3Image from '@assets/cover3_1761403348868.JPG';
-import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
@@ -104,7 +103,6 @@ const Index = () => {
         <main className="relative z-10">
           <HeroSection />
           <InvitationRevealSection />
-          <CountdownSection />
           <StorySection />
           <CoverSection
             imageUrl={cover1Image}

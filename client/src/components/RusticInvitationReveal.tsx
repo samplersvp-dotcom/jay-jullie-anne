@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import soulmates from '@assets/imageLoop_1761403348869.JPG';
 import forever from '@assets/imageLoop2_1761403348869.JPG';
@@ -15,6 +16,35 @@ interface RusticInvitationRevealProps {
 }
 
 const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealProps) => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date('December 2, 2025 14:00:00').getTime();
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        });
+      }
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
   const polaroids = [
     { src: soulmates, alt: 'Soulmates', rotation: -8 },
     { src: forever, alt: 'Forever', rotation: 2 },
@@ -165,11 +195,110 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
 
         {/* Elegant seal */}
         <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-          <div className="relative w-32 h-32 rounded-full flex items-center justify-center border-2 border-gold/40 bg-[#112417]">
-            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-4 w-4 object-contain" />
+          <div className="relative w-16 h-16 rounded-full flex items-center justify-center border-2 border-gold/40 bg-[#112417]">
+            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-12 w-12 object-contain" />
           </div>
         </div>
       </div>
+
+      {/* Countdown Section */}
+      <div className="max-w-4xl mx-auto text-center relative z-10 mt-20 px-4">
+        <motion.div 
+          className="mb-12"
+          initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.3 } : { duration: 0 }}
+        >
+          <h2 className="text-4xl font-display text-foreground mb-2" data-testid="text-countdown-title">
+            Forever starts soon
+          </h2>
+        </motion.div>
+
+        <motion.div 
+          className="grid grid-cols-4 gap-4 md:gap-8 max-w-lg mx-auto"
+          initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={animationsEnabled ? { duration: 0.8, ease: "easeOut", delay: 0.6 } : { duration: 0 }}
+        >
+          {[
+            { label: 'Days', value: timeLeft.days },
+            { label: 'Hours', value: timeLeft.hours },
+            { label: 'Minutes', value: timeLeft.minutes },
+            { label: 'Seconds', value: timeLeft.seconds }
+          ].map((item, index) => (
+            <motion.div
+              key={item.label}
+              className="text-center"
+              initial={animationsEnabled ? { opacity: 0, scale: 0.8 } : { opacity: 1, scale: 1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={animationsEnabled ? { 
+                duration: 0.6, 
+                ease: "easeOut", 
+                delay: 0.8 + (index * 0.1) 
+              } : { duration: 0 }}
+              data-testid={`countdown-${item.label.toLowerCase()}`}
+            >
+              <motion.div 
+                className="text-3xl md:text-4xl font-display mb-1 text-[#f9c31f]"
+                key={item.value}
+                initial={animationsEnabled ? { opacity: 0.7, scale: 0.9 } : { opacity: 1, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={animationsEnabled ? { duration: 0.3 } : { duration: 0 }}
+              >
+                {item.value.toString().padStart(2, '0')}
+              </motion.div>
+              <div className="text-xs font-body uppercase tracking-wider text-muted-foreground">
+                {item.label}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Scrolling Text */}
+        <div className="w-full overflow-hidden mt-8">
+          <div className={`flex whitespace-nowrap ${animationsEnabled ? 'animate-scroll-left' : ''}`}>
+            {/* First set of text */}
+            {Array.from({ length: 15 }).map((_, index) => (
+              <div key={`set1-${index}`} className="inline-flex items-center mx-6">
+                <span 
+                  className="text-3xl md:text-4xl font-script italic text-gold"
+                  style={{ fontFamily: 'Boska, serif' }}
+                  data-testid={`text-invited-${index + 1}`}
+                >
+                  You're invited!
+                </span>
+              </div>
+            ))}
+            {/* Duplicate set for seamless looping */}
+            {Array.from({ length: 15 }).map((_, index) => (
+              <div key={`set2-${index}`} className="inline-flex items-center mx-6">
+                <span 
+                  className="text-3xl md:text-4xl font-script italic text-gold"
+                  style={{ fontFamily: 'Boska, serif' }}
+                  data-testid={`text-invited-dup-${index + 1}`}
+                >
+                  You're invited!
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-scroll-left {
+          animation: scroll-left 10s linear infinite;
+        }
+      `}</style>
       {/* Floating rustic elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
         {[...Array(5)].map((_, i) => (
