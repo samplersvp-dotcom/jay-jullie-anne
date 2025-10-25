@@ -59,7 +59,7 @@ const RSVPSection = () => {
             </div>
 
             {/* RSVP Button */}
-            <a href="https://rico-julie-rsvp.replit.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://jay-lianne-rsvp.replit.app" target="_blank" rel="noopener noreferrer">
               <button
                 className="animated-rsvp-btn"
                 aria-label="RSVP to Wedding"
