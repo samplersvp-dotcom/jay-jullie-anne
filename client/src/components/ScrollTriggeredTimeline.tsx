@@ -54,7 +54,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
             
             {/* Card */}
             <motion.div 
-                className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-primary/20 hover:border-primary/40"
+                className="bg-white/20 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gold/30 hover:border-gold/40"
                 variants={cardVariants}
                 whileHover={{ y: -5 }}
             >
@@ -75,7 +75,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                                 {timelineEvent.event}
                             </h3>
                             <div className="w-10 h-0.5 bg-gold my-2 md:my-3"></div>
-                            <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
+                            <p className="text-xs md:text-sm text-primary leading-relaxed">
                                 {getEventDescription(timelineEvent.event)}
                             </p>
                         </div>
