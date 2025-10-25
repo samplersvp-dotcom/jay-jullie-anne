@@ -2,7 +2,8 @@
 import { MapPin, ExternalLink, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import ceremonyImage from '@assets/church_1761212838572.jpg';
+import ceremonyImage from '@assets/image_1761397040501.png';
+import receptionImage from '@assets/image_1761397107028.png';
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -22,7 +23,7 @@ const VenueSection = () => {
       title: 'Reception',
       name: 'Jamesville Hotel and Resort',
       address: 'Jamesville Hotel and Resort',
-      image: undefined,
+      image: receptionImage,
       mapUrl: 'https://maps.app.goo.gl/MuXqn1ZBfMXhP6SY6',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Jamesville+Hotel+and+Resort&zoom=15',
       description: 'Join us at Jamesville Hotel and Resort for our wedding reception. Celebrate with us as we continue our special day with dinner, dancing, and memories.',
