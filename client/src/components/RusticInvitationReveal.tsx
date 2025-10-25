@@ -8,6 +8,8 @@ import MONOGRAM_removebg_preview from "@assets/MONOGRAM-removebg-preview.png";
 
 import Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview from "@assets/Gemini_Generated_Image_iynfgviynfgviynf-removebg-preview.png";
 
+import Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview from "@assets/Gemini_Generated_Image_vt2kv3vt2kv3vt2k-removebg-preview.png";
+
 interface RusticInvitationRevealProps {
   animationsEnabled: boolean;
 }
@@ -164,7 +166,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         {/* Elegant seal */}
         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
           <div className="relative w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/40">
-            <img src={Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview} alt="I&R" className="h-12 w-12 object-contain" />
+            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-12 w-12 object-contain" />
           </div>
         </div>
       </div>

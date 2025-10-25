@@ -222,7 +222,7 @@ export default function ScrollTriggeredTimeline() {
                     <div className="w-2 h-2 bg-gold/40 rounded-full animate-pulse"></div>
                     <div className="w-8 h-px bg-gold/40"></div>
                 </div>
-                <p className="mt-4 text-primary font-body italic">
+                <p className="mt-4 font-body italic text-[#f9c31f]">
                     Our Love Shines Till Evening
                 </p>
             </motion.div>
