@@ -18,12 +18,12 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: 'center' }}
       />
-      {/* Cinematic gradient overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+      {/* Dark green gradient overlay matching site theme */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(140,40%,8%)]/70 via-[hsl(140,35%,12%)]/60 to-[hsl(140,40%,8%)]/80"></div>
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="mb-8">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] text-white tracking-wide leading-tight" data-testid="text-main-invitation" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
+          <h1 className="text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] text-[hsl(45,90%,85%)] tracking-wide leading-tight" data-testid="text-main-invitation" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
             {animationsEnabled ? (
               <TypeAnimation
                 sequence={[
@@ -61,15 +61,15 @@ const HeroSection = () => {
         </div>
 
         <div className={`transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 mb-10 max-w-lg mx-auto shadow-2xl">
+          <div className="bg-[hsl(140,35%,12%)]/80 backdrop-blur-md border border-[hsl(45,60%,30%)]/40 rounded-2xl p-8 mb-10 max-w-lg mx-auto shadow-2xl">
             <div className="space-y-3">
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white font-light tracking-wide font-times" data-testid="text-date">
+                <p className="text-lg sm:text-xl text-[hsl(45,90%,85%)] font-light tracking-wide font-times" data-testid="text-date">
                   12.02.2025 | Tuesday
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-lg sm:text-xl text-white font-light tracking-wide font-times" data-testid="text-venue">
+                <p className="text-lg sm:text-xl text-[hsl(45,90%,85%)] font-light tracking-wide font-times" data-testid="text-venue">
                   JAMESVILLE HOTEL AND RESORT
                 </p>
               </div>
@@ -182,7 +182,7 @@ const HeroSection = () => {
 
         /* Custom underscore cursor for TypeAnimation */
         .typewriter-text .react-type-animation-cursor {
-          color: white;
+          color: hsl(45, 90%, 85%);
           animation: blink 1.2s infinite;
         }
 
