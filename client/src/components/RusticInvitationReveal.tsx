@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import soulmates from '@assets/soulmates_1761211838875.jpg';
-import forever from '@assets/forever_1761211706821.jpg';
-import beloved from '@assets/beloved_1761211706816.jpg';
+import soulmates from '@assets/imageLoop_1761403348869.JPG';
+import forever from '@assets/imageLoop2_1761403348869.JPG';
+import beloved from '@assets/imageLoop3_1761403348869.JPG';
 import monogram from '../assets/I&R-monogram.png';
 
 import MONOGRAM_removebg_preview from "@assets/MONOGRAM-removebg-preview.png";
@@ -164,9 +164,9 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         </div>
 
         {/* Elegant seal */}
-        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-          <div className="relative w-16 h-16 rounded-full flex items-center justify-center border-2 border-gold/40 bg-[#112417]">
-            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-12 w-12 object-contain" />
+        <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+          <div className="relative w-32 h-32 rounded-full flex items-center justify-center border-2 border-gold/40 bg-[#112417]">
+            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-24 w-24 object-contain" />
           </div>
         </div>
       </div>

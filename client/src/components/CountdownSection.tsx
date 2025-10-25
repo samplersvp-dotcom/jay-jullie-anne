@@ -96,7 +96,52 @@ const CountdownSection = () => {
           ))}
         </motion.div>
 
+        {/* Scrolling Text */}
+        <div className="w-full overflow-hidden mt-8">
+          <div className={`flex whitespace-nowrap ${animationsEnabled ? 'animate-scroll-left' : ''}`}>
+            {/* First set of text */}
+            {Array.from({ length: 15 }).map((_, index) => (
+              <div key={`set1-${index}`} className="inline-flex items-center mx-6">
+                <span 
+                  className="text-3xl md:text-4xl font-script italic text-gold"
+                  style={{ fontFamily: 'Boska, serif' }}
+                  data-testid={`text-invited-${index + 1}`}
+                >
+                  You're invited!
+                </span>
+              </div>
+            ))}
+            {/* Duplicate set for seamless looping */}
+            {Array.from({ length: 15 }).map((_, index) => (
+              <div key={`set2-${index}`} className="inline-flex items-center mx-6">
+                <span 
+                  className="text-3xl md:text-4xl font-script italic text-gold"
+                  style={{ fontFamily: 'Boska, serif' }}
+                  data-testid={`text-invited-dup-${index + 1}`}
+                >
+                  You're invited!
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
+      
+      <style>{`
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .animate-scroll-left {
+          animation: scroll-left 10s linear infinite;
+        }
+      `}</style>
     </motion.section>
   );
 };

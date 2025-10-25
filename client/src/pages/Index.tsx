@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import ImageLoop from '@/components/ImageLoop';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 // Cover images and video from attached assets
 import cover1Image from '@assets/cover1_1761403348867.JPG';
@@ -106,7 +105,6 @@ const Index = () => {
           <HeroSection />
           <InvitationRevealSection />
           <CountdownSection />
-          <ImageLoop />
           <StorySection />
           <CoverSection
             imageUrl={cover1Image}
