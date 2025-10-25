@@ -103,7 +103,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-[25px] w-[25px] object-contain" />
+            <img src={Gemini_Generated_Image_vt2kv3vt2kv3vt2k_removebg_preview} alt="I&R" className="h-[75px] w-[75px] object-contain" />
           </div>
 
           {/* Desktop Navigation */}

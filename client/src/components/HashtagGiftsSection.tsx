@@ -113,29 +113,6 @@ const HashtagGiftsSection = () => {
               a monetary gift would be deeply appreciated as we start our life together. 🌿
             </p>
           </motion.div>
-
-          {/* Payment QR Code */}
-          <motion.div
-            className="max-w-md mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="text-center">
-                <img 
-                  src={giftQR}
-                  alt="Payment QR Code"
-                  className="w-full max-w-xs mx-auto object-contain"
-                  data-testid="img-gift-qr-hashtag"
-                />
-                <p className="text-sm text-gray-600 mt-4">
-                  BDO to BDO transfers are free.<br />
-                  Fees may apply for non-BDO transfers.
-                </p>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </motion.section>

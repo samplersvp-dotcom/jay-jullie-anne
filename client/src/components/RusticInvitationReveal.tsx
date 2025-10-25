@@ -121,7 +121,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             {/* Handwritten-style caption */}
             <div className="mt-4 text-center">
               <p 
-                className="text-primary italic text-[18px]"
+                className="italic text-[18px] text-[#0e1f14]"
                 style={{ fontFamily: 'Brush Script MT, cursive' }}
               >
                 {polaroid.alt}
@@ -200,7 +200,6 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           </div>
         </div>
       </div>
-
       {/* Countdown Section */}
       <div className="max-w-4xl mx-auto text-center relative z-10 mt-20 px-4">
         <motion.div 
@@ -254,7 +253,6 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           ))}
         </motion.div>
       </div>
-
       {/* Scrolling Text - Full Width */}
       <div className="w-full overflow-hidden mt-12 relative z-10">
         <div className={`flex whitespace-nowrap ${animationsEnabled ? 'animate-scroll-left' : ''}`}>
@@ -284,7 +282,6 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
           ))}
         </div>
       </div>
-
       <style>{`
         @keyframes scroll-left {
           0% {
@@ -296,7 +293,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         }
         
         .animate-scroll-left {
-          animation: scroll-left 10s linear infinite;
+          animation: scroll-left 3.33s linear infinite;
         }
       `}</style>
       {/* Floating rustic elements */}
