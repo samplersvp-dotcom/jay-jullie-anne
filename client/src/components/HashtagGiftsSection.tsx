@@ -107,13 +107,11 @@ const HashtagGiftsSection = () => {
               className="text-lg text-white leading-relaxed"
               data-testid="text-gifts-message"
             >
-              With all that we have, we've been truly blessed.
+              We're so grateful for your prayers, love, and presence on our special day.
               <br />
-              Your presence and prayers are all that we request.
+              If you wish to share an additional blessing,
               <br />
-              But if to give nevertheless,
-              <br />
-              Monetary gift is one we suggest.
+              a monetary gift would be deeply appreciated as we start our life together. 🌿
             </p>
           </motion.div>
 
