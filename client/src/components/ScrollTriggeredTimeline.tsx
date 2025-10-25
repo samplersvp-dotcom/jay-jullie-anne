@@ -54,7 +54,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
             
             {/* Card */}
             <motion.div 
-                className="bg-white/20 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-gold/30 hover:border-gold/40"
+                className="bg-card/30 border border-border rounded-xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-xl"
                 variants={cardVariants}
                 whileHover={{ y: -5 }}
             >
@@ -71,11 +71,11 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timelineEvent, i }) => {
                             <div className="text-xs md:text-sm font-bold text-gold mb-1">
                                 {timelineEvent.time}
                             </div>
-                            <h3 className="text-base md:text-lg font-serif font-semibold text-primary mb-2">
+                            <h3 className="text-base md:text-lg font-serif font-semibold text-foreground mb-2">
                                 {timelineEvent.event}
                             </h3>
                             <div className="w-10 h-0.5 bg-gold my-2 md:my-3"></div>
-                            <p className="text-xs md:text-sm text-primary leading-relaxed">
+                            <p className="text-xs md:text-sm text-foreground/80 leading-relaxed">
                                 {getEventDescription(timelineEvent.event)}
                             </p>
                         </div>
@@ -198,7 +198,7 @@ export default function ScrollTriggeredTimeline() {
                     <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-gold" data-testid="text-timeline-title">
                         Our Wedding Day
                     </h2>
-                    <p className="max-w-2xl mx-auto text-primary">
+                    <p className="max-w-2xl mx-auto text-[#efe0ae]">
                         Join us as we celebrate our love story. Here's what to expect on our special day.
                     </p>
                 </motion.div>
