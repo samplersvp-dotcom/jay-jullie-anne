@@ -167,7 +167,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
   return (
     <motion.section 
       id="story" 
-      className="bg-emerald-600 relative overflow-hidden isolate"
+      className="bg-primary relative overflow-hidden isolate"
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 3.5 } : { duration: 0 }}
@@ -245,7 +245,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
                   {card.id === 4 && (
                     <button
                       onClick={() => setShowFullStoryModal(true)}
-                      className="inline-flex items-center gap-2 mt-4 px-8 py-4 bg-white text-emerald-600 hover:bg-white/90 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+                      className="inline-flex items-center gap-2 mt-4 px-8 py-4 bg-gold text-gold-foreground hover:bg-gold-bright rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
                       data-testid="button-read-full-story"
                     >
                       <BookOpen className="w-5 h-5" />
@@ -363,7 +363,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
             {/* Close Button */}
             <button
               onClick={() => setShowFullStoryModal(false)}
-              className="sticky top-4 right-4 float-right z-10 p-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full transition-colors duration-200 shadow-lg"
+              className="sticky top-4 right-4 float-right z-10 p-2 bg-gold hover:bg-gold-bright text-gold-foreground rounded-full transition-colors duration-200 shadow-lg"
               data-testid="button-close-full-story"
               aria-label="Close"
             >
@@ -372,7 +372,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
 
             {/* Story Content */}
             <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-script italic text-emerald-600 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-script italic text-primary mb-8 text-center">
                 Our Love Story
               </h2>
               
@@ -385,13 +385,13 @@ Because when love is real, distance is just a test — and ours passed with flyi
               </div>
 
               <div className="mt-8 flex flex-col items-center gap-6">
-                <svg className="w-12 h-12 text-emerald-600 animate-pulse" viewBox="0 0 24 24">
+                <svg className="w-12 h-12 text-gold animate-pulse" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.04L12,21.35Z"/>
                 </svg>
                 
                 <button
                   onClick={() => setShowFullStoryModal(false)}
-                  className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl"
+                  className="px-8 py-3 bg-gold hover:bg-gold-bright text-gold-foreground rounded-lg transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl"
                   data-testid="button-exit-full-story"
                 >
                   Exit

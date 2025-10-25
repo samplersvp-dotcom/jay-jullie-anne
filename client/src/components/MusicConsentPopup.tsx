@@ -26,7 +26,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="bg-white rounded-2xl p-10 md:p-12 max-w-md w-full shadow-2xl"
+            className="bg-card border border-border rounded-2xl p-10 md:p-12 max-w-md w-full shadow-2xl"
           >
             <div className="text-center space-y-8">
               <motion.div
@@ -35,15 +35,15 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
                 className="flex justify-center"
               >
-                <Music className="h-16 w-16 text-emerald-600" strokeWidth={1.5} />
+                <Music className="h-16 w-16 text-gold" strokeWidth={1.5} />
               </motion.div>
               
               <div className="space-y-3">
-                <h2 className="text-2xl md:text-3xl font-medium text-emerald-700">
+                <h2 className="text-2xl md:text-3xl font-medium text-foreground">
                   Play music?
                 </h2>
                 
-                <p className="text-emerald-600 leading-relaxed text-sm md:text-base">
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                   Enhance your experience with background music
                 </p>
               </div>
@@ -51,7 +51,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
               <div className="flex flex-col gap-3 pt-4">
                 <Button
                   onClick={() => handleConsent(true)}
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-6 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="w-full bg-gold hover:bg-gold-bright text-gold-foreground font-medium py-6 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
                   data-testid="button-allow-music"
                 >
                   <Volume2 className="h-5 w-5 mr-2" />
@@ -60,7 +60,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 <Button
                   onClick={() => handleConsent(false)}
                   variant="ghost"
-                  className="w-full text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 font-medium py-6 px-6 rounded-lg transition-all duration-200"
+                  className="w-full text-muted-foreground hover:text-foreground hover:bg-muted font-medium py-6 px-6 rounded-lg transition-all duration-200"
                   data-testid="button-skip-music"
                 >
                   <VolumeX className="h-5 w-5 mr-2" />

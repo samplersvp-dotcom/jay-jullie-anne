@@ -35,7 +35,7 @@ const VenueSection = () => {
   return (
     <motion.section 
       id="venue" 
-      className="bg-emerald-600 py-12 px-4"
+      className="bg-primary py-12 px-4"
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 6.5 } : { duration: 0 }}
@@ -146,7 +146,7 @@ const VenueSection = () => {
                 href={venue.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-600 rounded-lg hover:bg-white/90 transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-gold text-gold-foreground rounded-lg hover:bg-gold-bright transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
                 data-testid={`button-${venue.title.toLowerCase()}-location`}
               >
                 Get Directions

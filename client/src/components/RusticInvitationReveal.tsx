@@ -89,7 +89,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             {/* Handwritten-style caption */}
             <div className="mt-4 text-center">
               <p 
-                className="text-emerald-600 italic text-[18px]"
+                className="text-primary italic text-[18px]"
                 style={{ fontFamily: 'Brush Script MT, cursive' }}
               >
                 {polaroid.alt}
