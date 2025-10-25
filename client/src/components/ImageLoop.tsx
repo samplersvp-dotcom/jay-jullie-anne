@@ -1,10 +1,11 @@
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
 // Image loop images - Nature wedding photos
-import imageLoop1 from '@assets/imageLoop1_1761211706823.jpg';
-import imageLoop2 from '@assets/imageLoop2_1761211706823.jpg';
-import imageLoop3 from '@assets/imageLoop3_1761211706823.jpg';
-import imageLoop4 from '@assets/imageLoop4_1761211706824.jpg';
+import imageLoop1 from '@assets/imageLoop_1761403348869.JPG';
+import imageLoop2 from '@assets/imageLoop2_1761403348869.JPG';
+import imageLoop3 from '@assets/imageLoop3_1761403348869.JPG';
+import imageLoop4 from '@assets/imageLoop4_1761403348870.JPG';
+import imageLoop5 from '@assets/imageLoop5_1761403348870.JPG';
 
 const ImageLoop = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -12,7 +13,8 @@ const ImageLoop = () => {
     imageLoop1,
     imageLoop2,
     imageLoop3,
-    imageLoop4
+    imageLoop4,
+    imageLoop5
   ];
 
   return (
