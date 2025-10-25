@@ -37,7 +37,7 @@ const CountdownSection = () => {
   return (
     <motion.section 
       id="countdown" 
-      className="section-pastel-blue py-2 px-4"
+      className="section-pastel-blue py-2 px-4 bg-[#112518]"
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 2.5 } : { duration: 0 }}
@@ -127,7 +127,6 @@ const CountdownSection = () => {
         </div>
 
       </div>
-      
       <style>{`
         @keyframes scroll-left {
           0% {
