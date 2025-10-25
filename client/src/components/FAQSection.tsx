@@ -38,7 +38,7 @@ const FAQSection = () => {
 
   return (
     <motion.section 
-      className="section-pastel-blue py-2 px-4"
+      className="bg-primary py-12 px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 11.5 }}
@@ -51,10 +51,10 @@ const FAQSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 11.8 }}
         >
-          <h2 className="text-5xl font-display italic text-primary mb-8" data-testid="text-faq-title">
+          <h2 className="text-5xl font-display italic text-gold mb-8" data-testid="text-faq-title">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg font-body text-foreground max-w-2xl mx-auto">
+          <p className="text-lg font-body text-gold-light max-w-2xl mx-auto">
             We've compiled answers to the most common questions about our wedding day. 
             If you have additional questions, please don't hesitate to contact us.
           </p>
@@ -65,34 +65,34 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="bg-card/30 border border-border rounded-xl shadow-soft overflow-hidden"
+              className="bg-white/10 border border-gold/30 rounded-xl shadow-soft overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 12.1 + (index * 0.1) }}
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/5 transition-colors duration-300"
+                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/10 transition-colors duration-300"
               >
                 <div className="flex items-center gap-3">
-                  <faq.icon className="w-5 h-5 text-primary flex-shrink-0" />
-                  <h3 className="text-lg font-display font-bold text-primary">
+                  <faq.icon className="w-5 h-5 text-gold flex-shrink-0" />
+                  <h3 className="text-lg font-display font-bold text-gold">
                     {faq.question}
                   </h3>
                 </div>
                 <div className="flex-shrink-0">
                   {openItems.includes(index) ? (
-                    <ChevronUp className="w-5 h-5 text-primary" />
+                    <ChevronUp className="w-5 h-5 text-gold" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-primary" />
+                    <ChevronDown className="w-5 h-5 text-gold" />
                   )}
                 </div>
               </button>
               
               {openItems.includes(index) && (
                 <div className="px-8 pb-6">
-                  <div className="w-full h-px bg-border mb-4"></div>
-                  <p className="text-foreground leading-relaxed">
+                  <div className="w-full h-px bg-gold/30 mb-4"></div>
+                  <p className="text-gold-light leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

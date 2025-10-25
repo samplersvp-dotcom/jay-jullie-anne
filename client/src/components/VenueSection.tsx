@@ -47,7 +47,7 @@ const VenueSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={animationsEnabled ? { duration: 0.8, delay: 6.8 } : { duration: 0 }}
       >
-        <h1 className="text-5xl md:text-6xl font-display italic text-white mb-2" data-testid="text-venue-section-title">
+        <h1 className="text-5xl md:text-6xl font-display italic text-gold mb-2" data-testid="text-venue-section-title">
           Venue
         </h1>
       </motion.div>
@@ -57,20 +57,20 @@ const VenueSection = () => {
         {venues.map((venue, index) => (
           <motion.div 
             key={index}
-            className="bg-card/30 border border-primary/20 rounded-3xl overflow-hidden shadow-lg"
+            className="bg-white/10 border border-gold/30 rounded-3xl overflow-hidden shadow-lg"
             initial={animationsEnabled ? { opacity: 0, y: 30 } : { opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={animationsEnabled ? { duration: 0.8, delay: 7.2 + (index * 0.3) } : { duration: 0 }}
           >
             {/* Header */}
             <div className="text-center py-12 px-6">
-              <h2 className="text-3xl md:text-4xl font-display italic text-white mb-4" data-testid={`text-${venue.title.toLowerCase()}-title`}>
+              <h2 className="text-3xl md:text-4xl font-display italic text-gold mb-4" data-testid={`text-${venue.title.toLowerCase()}-title`}>
                 {venue.title}
               </h2>
-              <h3 className="text-xl md:text-2xl font-display italic text-white/80 mb-3" data-testid={`text-${venue.title.toLowerCase()}-name`}>
+              <h3 className="text-xl md:text-2xl font-display italic text-gold-light mb-3" data-testid={`text-${venue.title.toLowerCase()}-name`}>
                 {venue.name}
               </h3>
-              <div className="flex items-center justify-center gap-2 text-white/80">
+              <div className="flex items-center justify-center gap-2 text-gold-light">
                 <MapPin className="w-4 h-4" />
                 <p className="text-sm" data-testid={`text-${venue.title.toLowerCase()}-address`}>
                   {venue.address}
@@ -97,20 +97,20 @@ const VenueSection = () => {
             <div className="grid md:grid-cols-2 gap-8 px-8 pb-8">
               {/* About Section */}
               <div className="space-y-4">
-                <h4 className="text-xs font-semibold uppercase tracking-widest text-white/60 border-l-2 border-white pl-3">
+                <h4 className="text-xs font-semibold uppercase tracking-widest text-gold border-l-2 border-gold pl-3">
                   About the Venue
                 </h4>
-                <p className="text-white/80 leading-relaxed pl-3" data-testid={`text-${venue.title.toLowerCase()}-description`}>
+                <p className="text-gold-light leading-relaxed pl-3" data-testid={`text-${venue.title.toLowerCase()}-description`}>
                   {venue.description}
                 </p>
-                <p className="text-sm text-white/70 italic pl-3" data-testid={`text-${venue.title.toLowerCase()}-details`}>
+                <p className="text-sm text-gold-light italic pl-3" data-testid={`text-${venue.title.toLowerCase()}-details`}>
                   {venue.details}
                 </p>
               </div>
 
               {/* Map Section */}
               <div className="space-y-4">
-                <h4 className="text-xs font-semibold uppercase tracking-widest text-white/60 border-l-2 border-white pl-3">
+                <h4 className="text-xs font-semibold uppercase tracking-widest text-gold border-l-2 border-gold pl-3">
                   Location Map
                 </h4>
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-md">
@@ -129,14 +129,14 @@ const VenueSection = () => {
             </div>
 
             {/* Footer */}
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-8 pb-8 pt-4 border-t border-white/20 mx-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-8 pb-8 pt-4 border-t border-gold/30 mx-8">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center border border-gold/40">
+                  <Clock className="w-5 h-5 text-gold" />
                 </div>
                 <div>
-                  <p className="text-xs text-white/60 uppercase tracking-wide">Start Time</p>
-                  <p className="text-lg font-semibold text-white" data-testid={`text-${venue.title.toLowerCase()}-start-time`}>
+                  <p className="text-xs text-gold uppercase tracking-wide">Start Time</p>
+                  <p className="text-lg font-semibold text-gold-light" data-testid={`text-${venue.title.toLowerCase()}-start-time`}>
                     {venue.startTime}
                   </p>
                 </div>
