@@ -293,7 +293,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         }
         
         .animate-scroll-left {
-          animation: scroll-left 3.33s linear infinite;
+          animation: scroll-left 10s linear infinite;
         }
       `}</style>
       {/* Floating rustic elements */}
