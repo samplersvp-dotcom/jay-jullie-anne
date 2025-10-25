@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-import guestsImage from "@assets/guests_1761211706822.png";
-import principalSponsorsImage from "@assets/ninong-ninang-attire_1761211706826.png";
+import guestsImage from "@assets/image_1761406289496.png";
+import principalSponsorsImage from "@assets/Gemini_Generated_Image_hv706rhv706rhv70_1761406298629.png";
 
 const DressCodeSection = () => {
   return (
