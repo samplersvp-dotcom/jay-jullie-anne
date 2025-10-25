@@ -72,7 +72,7 @@ const FAQSection = () => {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/10 transition-colors duration-300"
+                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/10 transition-colors duration-300 bg-[#0d1f13]"
               >
                 <div className="flex items-center gap-3">
                   <faq.icon className="w-5 h-5 text-gold flex-shrink-0" />
