@@ -253,35 +253,35 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
             </motion.div>
           ))}
         </motion.div>
+      </div>
 
-        {/* Scrolling Text */}
-        <div className="w-full overflow-hidden mt-8">
-          <div className={`flex whitespace-nowrap ${animationsEnabled ? 'animate-scroll-left' : ''}`}>
-            {/* First set of text */}
-            {Array.from({ length: 15 }).map((_, index) => (
-              <div key={`set1-${index}`} className="inline-flex items-center mx-6">
-                <span 
-                  className="text-3xl md:text-4xl font-script italic text-gold"
-                  style={{ fontFamily: 'Boska, serif' }}
-                  data-testid={`text-invited-${index + 1}`}
-                >
-                  You're invited!
-                </span>
-              </div>
-            ))}
-            {/* Duplicate set for seamless looping */}
-            {Array.from({ length: 15 }).map((_, index) => (
-              <div key={`set2-${index}`} className="inline-flex items-center mx-6">
-                <span 
-                  className="text-3xl md:text-4xl font-script italic text-gold"
-                  style={{ fontFamily: 'Boska, serif' }}
-                  data-testid={`text-invited-dup-${index + 1}`}
-                >
-                  You're invited!
-                </span>
-              </div>
-            ))}
-          </div>
+      {/* Scrolling Text - Full Width */}
+      <div className="w-full overflow-hidden mt-12 relative z-10">
+        <div className={`flex whitespace-nowrap ${animationsEnabled ? 'animate-scroll-left' : ''}`}>
+          {/* First set of text */}
+          {Array.from({ length: 20 }).map((_, index) => (
+            <div key={`set1-${index}`} className="inline-flex items-center mx-8">
+              <span 
+                className="text-4xl md:text-5xl lg:text-6xl font-script italic text-gold"
+                style={{ fontFamily: 'Boska, serif' }}
+                data-testid={`text-invited-${index + 1}`}
+              >
+                You're invited!
+              </span>
+            </div>
+          ))}
+          {/* Duplicate set for seamless looping */}
+          {Array.from({ length: 20 }).map((_, index) => (
+            <div key={`set2-${index}`} className="inline-flex items-center mx-8">
+              <span 
+                className="text-4xl md:text-5xl lg:text-6xl font-script italic text-gold"
+                style={{ fontFamily: 'Boska, serif' }}
+                data-testid={`text-invited-dup-${index + 1}`}
+              >
+                You're invited!
+              </span>
+            </div>
+          ))}
         </div>
       </div>
 
