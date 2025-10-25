@@ -31,13 +31,13 @@ const HashtagGiftsSection = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.7, type: "spring" }}
           >
-            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
-              <Camera className="w-8 h-8 text-white" data-testid="icon-camera" />
+            <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/40">
+              <Camera className="w-8 h-8 text-gold" data-testid="icon-camera" />
             </div>
           </motion.div>
 
           <motion.h2 
-            className="font-display italic text-white mb-4 text-[48px]"
+            className="font-display italic text-gold mb-4 text-[48px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -47,13 +47,13 @@ const HashtagGiftsSection = () => {
           </motion.h2>
 
           <motion.div
-            className="bg-white/10 border border-white/20 rounded-xl p-6 max-w-2xl mx-auto"
+            className="bg-white/10 border border-gold/30 rounded-xl p-6 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.9 }}
           >
             <p 
-              className="text-lg text-white leading-relaxed mb-6"
+              className="text-lg text-gold-light leading-relaxed mb-6"
               data-testid="text-social-message"
             >
               We'd love to see the beautiful moments you capture on our special day!
@@ -61,8 +61,8 @@ const HashtagGiftsSection = () => {
               <br />
               Kindly mention us on our social media accounts when you share photos and videos from the celebration.
             </p>
-            <div className="bg-white/10 border border-white/20 rounded-lg p-4">
-              <p className="text-base sm:text-xl md:text-2xl font-semibold text-white tracking-wide break-words" data-testid="text-wedding-hashtag">
+            <div className="bg-gold/10 border border-gold/40 rounded-lg p-4">
+              <p className="text-base sm:text-xl md:text-2xl font-semibold text-gold tracking-wide break-words" data-testid="text-wedding-hashtag">
                 #JAYWalaNangSoLIANNE
               </p>
             </div>
@@ -82,13 +82,13 @@ const HashtagGiftsSection = () => {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.9, type: "spring" }}
           >
-            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
-              <Gift className="w-8 h-8 text-white" data-testid="icon-gift" />
+            <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center border-2 border-gold/40">
+              <Gift className="w-8 h-8 text-gold" data-testid="icon-gift" />
             </div>
           </motion.div>
 
           <motion.h2 
-            className="font-display italic text-white mb-6 text-[48px]"
+            className="font-display italic text-gold mb-6 text-[48px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
@@ -98,13 +98,13 @@ const HashtagGiftsSection = () => {
           </motion.h2>
 
           <motion.div
-            className="bg-white/10 border border-white/20 rounded-xl p-6 max-w-2xl mx-auto mb-6"
+            className="bg-white/10 border border-gold/30 rounded-xl p-6 max-w-2xl mx-auto mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
           >
             <p 
-              className="text-lg text-white leading-relaxed"
+              className="text-lg text-gold-light leading-relaxed"
               data-testid="text-gifts-message"
             >
               We're so grateful for your prayers, love, and presence on our special day.
