@@ -317,16 +317,16 @@ Because when love is real, distance is just a test — and ours passed with flyi
               </svg>
 
               <div className="relative z-10 space-y-6 sm:space-y-8">
-                <h3 className="text-4xl sm:text-5xl md:text-6xl font-script italic font-black mb-6 sm:mb-8 text-gold" data-testid="text-story-vow-title">
-                  Our Vow
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-script italic font-black mb-6 sm:mb-8 text-gold" data-testid="text-story-vow-title">
+                  A Reflection on Isaiah 60:22
                 </h3>
                 
                 <div className="max-w-2xl mx-auto">
                   <p className="text-xl sm:text-2xl leading-relaxed italic mb-4 text-gold">
-                    "Love is patient, love is kind."
+                    "When the Time is Right, I the Lord Will Make it Happen"
                   </p>
                   <p className="text-base sm:text-lg font-body text-gold-light">
-                    1 Corinthians 13:4
+                    Isaiah 60:22
                   </p>
                 </div>
                 
