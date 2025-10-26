@@ -9,7 +9,7 @@ interface MusicControlProps {
 const MusicControl = ({ audioRef }: MusicControlProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(false);
-  const [volume, setVolume] = useState(0.3);
+  const [volume, setVolume] = useState(0.5);
   const [isMuted, setIsMuted] = useState(false);
   const controlsRef = useRef<HTMLDivElement>(null);
 
