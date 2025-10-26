@@ -325,7 +325,7 @@ Because when love is real, distance is just a test — and ours passed with flyi
                   <p className="text-xl sm:text-2xl leading-relaxed italic mb-4 text-gold">
                     "When the Time is Right, I the Lord Will Make it Happen"
                   </p>
-                  <p className="text-base sm:text-lg font-body text-gold-light">
+                  <p className="text-base sm:text-lg font-body text-[#f4c01f]">
                     Isaiah 60:22
                   </p>
                 </div>
@@ -349,7 +349,6 @@ Because when love is real, distance is just a test — and ours passed with flyi
           </div>
         </div>
       </div>
-
       {/* Full Story Modal */}
       {showFullStoryModal && (
         <div 
